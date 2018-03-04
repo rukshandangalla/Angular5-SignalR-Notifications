@@ -1,0 +1,15 @@
+<div class="layout-topbar">
+    <div class="fluid-container">
+        <div class="row">
+            <div class="col-md-10">
+                <div style="color:white" class="col-md-3">Angular 5+ SignalR Notifications</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <button (click)="showMessage()">Show Message</button>
+</div>
+
+<p-growl [(value)]="msgs"></p-growl>
