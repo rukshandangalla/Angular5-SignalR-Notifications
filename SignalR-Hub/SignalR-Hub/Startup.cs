@@ -40,7 +40,7 @@ namespace SignalRHub
             app.UseCors("CorsPolicy");
             app.UseSignalR(routes =>
             {
-                routes.MapHub<NotifyHub>("notify");
+                routes.MapHub<NotifyHub>("/notify");
             });
 
             app.UseMvc();
